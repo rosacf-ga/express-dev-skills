@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit Skill</h1>
+    <h4><%= skill.skill %> </h4>
+        <!-- Line 13 is PUT not GET, because we're updating and posting the todo now, not just editing it' -->
+    <form action="/skills/<%= skill.id %>?_method=PUT" method="POST" autocomplete="off">
+        <input type="checkbox" <%= skill.mastered ? 'checked' : '' %> name='mastered'>
+        <!-- checked is an html attribute that will check a checkbox -->
+        <button type="submit">Update Skill</button>
+      </form>
+</body>
+</html>
