@@ -1,5 +1,11 @@
 # Express Dev Skills Lab
 
+Modules follow best-practice routing and MVC:
+- **routes/skills.js**
+- **models/skill.js**
+- **views/skills**
+- **controllers/skills.js**
+
 ## Part 1
 - Scaffold a new app named `express-dev-skills` using express generator.
 
@@ -23,8 +29,4 @@
 5. When the edit Dev Skill form is submitted, the skill should be updated in the "database" and redirect the user back to the **show** view.
 
 
-Modules follow best-practice routing and MVC:
-- **routes/skills.js**
-- **models/skill.js**
-- **views/skills**
-- **controllers/skills.js**
+
